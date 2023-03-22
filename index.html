@@ -1,353 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jared Iannarino's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-    <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <script src="https://kit.fontawesome.com/aa18dafc71.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/img/avatar.jpg"
-              alt="Ram Maheshwari Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Jane Smith</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devJared.png" alt="A logo that says dev id='Jared'">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Jared Iannarino</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
+            <img src="img/Jared.png" alt="a picture of Jared Iannarino from the chest up. He is in a suit and glasses. He is smiling." class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design</h3>
+                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aestetics and usability in mind. If you can dream it, i can design, and code it.</p>
+                </div> <!-- / service -->
+                
+               
+                <div class="service">
+                    <h3>Develop</h3>
+                    <p>I am a versatile frontend developer with a strong grip of the fundamentals of web development using HTML, CSS and Javascript. I am proficient with, and love using ReactJS as well. </p>
+                </div> <!-- / service -->
+                
+                <!-- Add more services if you want -->
             
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Projects</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Front-End Developer & TIME Magazine's 2006 Person of the Year</p>
+           
+           <div class="about-me__body">
+               <p>I'm a web developer and designer based out of Columbus, Ohio. My passion is for creating apps that fill a need, and do so in a beautiful way. My specialities include Responsive Design, Web APIs, and React. </p>
+               <p>After college, I took my finance background and became a mortgage loan officer. I started to learn to code after work everyday, and discovered that coding was my true passion. I decided to dive in head first and became a Web Developer! That may have been the best thing i've ever done, well, besides winning TIME Magazine's Person of the Year in 2006 (Look it up).</p>
+           </div>
+           
+           <img src="img/jaredLong.jpeg" alt="Jared standing with his new fiancee Mikala. Mikala is wearing an engagement ring and looking at Jared. Jared has his arm around Mikala and is smiling at the camera. There is a sunset in the background." class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item-1.html" class="portfolio__item">
+                    <img src="img/quizzical.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item-2.html" class="portfolio__item">
+                    <img src="img/tenzies.png" alt="" class="portfolio__img">
+                </a>
+    
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item-3.html" class="portfolio__item">
+                    <img src="img/youmdb.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item-4.html" class="portfolio__item">
+                    <img src="img/reactiveDashboard.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item-5.html" class="portfolio__item">
+                    <img src="img/chromeExtension.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item-6.html" class="portfolio__item">
+                    <img src="img/experiences.png" alt="" class="portfolio__img">
+                </a>
+                
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Jane Smith</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            I am a passionate frontend developer based in London, UK. My specialities are <strong>React JS</strong> and <strong>Tailwind CSS</strong>, and I love building apps that are delightful to use.
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">See my projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/img/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/img/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/img/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/img/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/img/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    
-    
-        <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            All my projects include links to the code and live version. Click the button to learn more about each one.
-          </span>
-        </h2>
-
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/img/quiz.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
             </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Quiz App</h3>
-              <p class="projects__row-content-desc">
-                Quizzical is a simple quiz app that lets you select alternatives and then gives you a score. It's built with functional React components. 
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/img/dashboard.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Personal Dashboard</h3>
-              <p class="projects__row-content-desc">
-                A Chrome Extension that gives you an overview over the current time, how the weather is like and how Dogecoin is performing. Interacts with multiple APIs using async JS.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/img/password.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Password Generator</h3>
-              <p class="projects__row-content-desc">
-                An app that generates random passwords based on a few user inputs, 
-                e.g. length, types of characters, etc. Built with HTML, CSS, and vanilla JavaScript.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            <p>I'm a frontend developer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.
-            </p>
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                My background is in teaching and marketing. I have a bachelors degree in English from Kings College. When I'm not coding, I take care of my five adorable cats.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">Git</div>
-              <div class="skills__skill">Figma</div>
-              <div class="skills__skill">Tailwind CSS</div>
-              <div class="skills__skill">Jasmine</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-
-    
-    
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at jane@example.com or call me directly at +123456789
-          </span>
-        </h2>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/img/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Jane Smith</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
-        </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :)
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
-         -->
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
-  </body>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:iannarinoj@gmail.com" class="footer__link">Iannarinoj@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jared-iannarino-ab419920a">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/JaredIannarino">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jared-iannarino-ab419920a">
+                        <i class="fa-solid fa-dog"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
 </html>
