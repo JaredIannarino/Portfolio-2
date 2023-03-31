@@ -284,6 +284,9 @@ header {
 /*  Intro section  */
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
@@ -297,7 +300,44 @@ header {
     color: var(--color-light);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 670px) {
+
+    .portfolio-item-individual p{
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+    
+
+    .section__title--about {
+        grid-area: title;
+    }
+    
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: 95%;
+        padding-left: 1em;
+        padding-right: calc(220px + 4em);
+    }
+    
+    .about-me__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+        min-width: 330px;
+    }
+
     .intro {
         display: grid;
         width: min-content;
@@ -312,13 +352,13 @@ header {
 
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 300px;
         position: relative;
         z-index: 2;
     }    
     
     .landscape{
-        min-width: 350px;
+        min-width: 300px;
         grid-area: img;
         position: relative;
         z-index: 2;
@@ -404,11 +444,18 @@ header {
     .service {
         margin-bottom: 0;
     }
+
+    .landscape{
+        min-width: 375px;
+    }
+    
+    .section__title--intro{
+    font-size: 2.75rem;
+    }
 }
 
-
 .about-me {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -417,41 +464,6 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-    .portfolio-item-individual p{
-        font-size: 1.5rem;
-    }
-
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: 100%;
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
 
 /* My Work */
 
@@ -505,7 +517,6 @@ header {
     background: #111;
     color: var(--color-accent);
     text-align: center;
-    padding:0;
     height: 10vh;
     width: 100vw;
     font-size: var(--fs-h3);
@@ -550,7 +561,7 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-intro {
-    padding:  0 1em 1em 1em;
+    padding:  1.75em 1em 1em 1em;
 }
 
 .portfolio-item-individual {
@@ -562,9 +573,8 @@ header {
 }
 
 .portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 800px;
+    margin: 10px auto;
 }
 
 .portfolio-item-individual div {
