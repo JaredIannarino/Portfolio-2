@@ -43,11 +43,10 @@
 }
 
 /* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
+
 body {
     display: flex;
     flex-direction: column;
