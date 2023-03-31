@@ -314,10 +314,9 @@ header {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
         width: 95%;
-        padding-left: 1em;
-        padding-right: calc(220px + 4em);
+        padding-left: 5px;
+        padding-right: calc(100px + 1em);
     }
     
     .about-me__img {
@@ -427,6 +426,17 @@ header {
         grid-column-gap: 2em;
     }
     
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: 95%;
+        padding-left: 1em;
+        padding-right: calc(220px + 4em);
+    }
+
     .about-me__img{
         height: 90%;
         max-height:700px ;
