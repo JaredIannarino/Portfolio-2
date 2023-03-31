@@ -293,6 +293,7 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    width: 100%;
     color: var(--color-light);
 }
 
@@ -316,6 +317,13 @@ header {
         z-index: 2;
     }    
     
+    .landscape{
+        min-width: 350px;
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+
 .section__title--intro{
     font-size: 2.25rem;
 }
@@ -327,13 +335,17 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: 100%;
+        width: 115%;
     }
 
     .portfolio-item-individual{
         padding: 0px;
         margin: 0;
         height: fit-content;
+    }
+
+    .shorten{
+        width: 100%;
     }
 }
 
