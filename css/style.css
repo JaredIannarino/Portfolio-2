@@ -414,6 +414,23 @@ header {
     margin: 0 auto 2em;
 }
 
+@media (min-width: 350px) {
+
+
+    .portfolio {
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+
+    section {
+        padding: 2em 2em;
+    }
+}
+
 @media (min-width: 800px) {
 
     .about-me {
@@ -487,12 +504,16 @@ header {
     text-align: center;
 }
 
+section {
+    padding: 1em 1em;
+}
+
 .portfolio {
     margin: 0 auto;
     max-width: 1000px;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .portfolio__item {
