@@ -414,22 +414,6 @@ header {
     margin: 0 auto 2em;
 }
 
-@media (min-width: 350px) {
-
-
-    .portfolio {
-        margin: 0 auto;
-        max-width: 1000px;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-
-    section {
-        padding: 2em 2em;
-    }
-}
 
 @media (min-width: 800px) {
 
@@ -513,12 +497,14 @@ section {
     max-width: 1000px;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: fit-content(500px);
 }
 
 .portfolio__item {
-    background: var(--color-accent);
+    background: var(--color-dark);
     overflow: hidden;
+    height: fit-content(250px);
 
 }
 
@@ -526,8 +512,8 @@ section {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    object-fit: cover;
-    height: 100%;
+    object-fit: contain;
+    height: fit-content;
 }
 
 .portfolio__item:focus {
